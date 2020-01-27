@@ -13,6 +13,31 @@
 composer require icawebdesign/reading-time
 ```
 
+### Usage
+```php
+// Return number of minutes
+$readingTime = new ReadingTime();
+$minutes = $readingTime->minutes($string); // eg: 5
+```
+
+```php
+// Return minutes with suffix
+$readingTime = new ReadingTime();
+$readingLength = $readingTime->minutesWithSuffix($string); // eg: 5 minute read
+```
+
+```php
+// Change reading speed (default: 250 words-per-minute)
+$readingTime = new ReadingTime(400);
+$minutes = $readingTime->minutes($string);
+```
+
+```php
+// Change suffix string
+$readingTime = new ReadingTime();
+$readingLength = $readingTime->minutesWithSuffix($string, 'mins reading');
+```
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
