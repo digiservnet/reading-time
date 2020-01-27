@@ -2,12 +2,18 @@
     "name": "icawebdesign/reading-time",
     "version": "1.0.0",
     "description": "Calculate indication of length of time to read an article",
+    "keywords": [
+        "icawebdesign",
+        "article",
+        "reading"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ian",
-            "email": "ian@ianh.io"
+            "name": "Ian.H",
+            "email": "ian@ianh.io",
+            "role":  "Developer"
         }
     ],
     "require": {
