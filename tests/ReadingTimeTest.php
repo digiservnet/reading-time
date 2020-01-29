@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class ReadingTimeTest extends TestCase
 {
-    protected const WPM = 250;
+    protected const WPM = 200;
 
     /** @var FakerFactory */
     protected $faker;

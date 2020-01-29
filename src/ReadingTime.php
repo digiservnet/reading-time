@@ -4,11 +4,11 @@ namespace Icawebdesign\ReadingTime;
 
 class ReadingTime
 {
-    protected $wpm = 250;
+    protected $wpm = 200;
 
     protected $suffix = 'minute read';
 
-    public function __construct(int $wpm = 250)
+    public function __construct(int $wpm = 200)
     {
         $this->wpm = $wpm;
     }
