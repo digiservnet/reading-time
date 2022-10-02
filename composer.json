@@ -1,6 +1,5 @@
 {
     "name": "icawebdesign/reading-time",
-    "version": "1.1.0",
     "description": "Calculate indication of length of time to read an article",
     "keywords": [
         "icawebdesign",
@@ -12,7 +11,7 @@
     "authors": [
         {
             "name": "Ian.H",
-            "email": "ian@ianh.io",
+            "email": "ian.h@digiserv.net",
             "role":  "Developer"
         }
     ],
