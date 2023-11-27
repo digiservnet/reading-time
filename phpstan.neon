@@ -1,0 +1,10 @@
+parameters:
+    level: 8
+    customRulesetUsed: true
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    paths:
+        - src
+
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon

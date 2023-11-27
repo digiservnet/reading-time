@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/opt/project/phpunit.xml.dist" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.017809">
+    <testsuite name="Reading-Time TestSuite" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.017809">
+      <testsuite name="Icawebdesign\ReadingTime\Tests\ReadingTimeTest" file="/opt/project/tests/ReadingTimeTest.php" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.017809">
+        <testcase name="calculation_returns_a_valid_integer" file="/opt/project/tests/ReadingTimeTest.php" line="23" class="Icawebdesign\ReadingTime\Tests\ReadingTimeTest" classname="Icawebdesign.ReadingTime.Tests.ReadingTimeTest" assertions="1" time="0.013843"/>
+        <testcase name="smaller_word_count_than_wpm_returns_1" file="/opt/project/tests/ReadingTimeTest.php" line="40" class="Icawebdesign\ReadingTime\Tests\ReadingTimeTest" classname="Icawebdesign.ReadingTime.Tests.ReadingTimeTest" assertions="1" time="0.000256"/>
+        <testcase name="word_count_just_over_wpm_returns_rounded_down_minutes" file="/opt/project/tests/ReadingTimeTest.php" line="46" class="Icawebdesign\ReadingTime\Tests\ReadingTimeTest" classname="Icawebdesign.ReadingTime.Tests.ReadingTimeTest" assertions="1" time="0.000618"/>
+        <testcase name="word_count_half_way_between_multiples_of_wpm_returns_rounded_up_minutes" file="/opt/project/tests/ReadingTimeTest.php" line="52" class="Icawebdesign\ReadingTime\Tests\ReadingTimeTest" classname="Icawebdesign.ReadingTime.Tests.ReadingTimeTest" assertions="1" time="0.000964"/>
+        <testcase name="calculation_with_suffix_returns_a_number_of_minutes_and_the_suffix" file="/opt/project/tests/ReadingTimeTest.php" line="61" class="Icawebdesign\ReadingTime\Tests\ReadingTimeTest" classname="Icawebdesign.ReadingTime.Tests.ReadingTimeTest" assertions="1" time="0.001144"/>
+        <testcase name="using_a_facade_returns_a_correct_word_count" file="/opt/project/tests/ReadingTimeTest.php" line="70" class="Icawebdesign\ReadingTime\Tests\ReadingTimeTest" classname="Icawebdesign.ReadingTime.Tests.ReadingTimeTest" assertions="1" time="0.000983"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

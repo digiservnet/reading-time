@@ -1,4 +1,4 @@
 /vendor
-/build
+/.build
 .phpunit.result.cache
-docker-compose.yml
+/.phpunit.cache

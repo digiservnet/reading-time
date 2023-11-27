@@ -1,0 +1,28 @@
+services:
+  php81:
+    container_name: php81
+    image: digiserv/php8-cli:8.1.21-alpine
+    working_dir: /opt/project
+    volumes:
+      - ./:/opt/project
+    entrypoint: /bin/sh
+    tty: true
+
+  php82:
+    container_name: php82
+    image: digiserv/php8-cli:8.2.12-alpine
+    working_dir: /opt/project
+    volumes:
+      - ./:/opt/project
+    entrypoint: /bin/sh
+    tty: true
+
+  php83:
+    container_name: php83
+    image: digiserv/php8-cli:8.3.0RC6-alpine
+    working_dir: /opt/project
+    volumes:
+      - ./:/opt/project
+    entrypoint: /bin/sh
+    tty: true
+

@@ -2,14 +2,13 @@
 
 namespace Icawebdesign\ReadingTime\Providers;
 
-use Icawebdesign\ReadingTime\ReadingTime;
 use Illuminate\Support\ServiceProvider;
+use Icawebdesign\ReadingTime\ReadingTime;
 
 class ReadingTimeServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
-        //
     }
 
     public function register(): void

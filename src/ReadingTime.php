@@ -4,13 +4,11 @@ namespace Icawebdesign\ReadingTime;
 
 class ReadingTime
 {
-    protected $wpm = 200;
+    protected string $suffix = 'minute read';
 
-    protected $suffix = 'minute read';
-
-    public function __construct(int $wpm = 200)
-    {
-        $this->wpm = $wpm;
+    public function __construct(
+        protected int $wpm = 200,
+    ) {
     }
 
     public function minutes(string $string): int
@@ -21,19 +19,19 @@ class ReadingTime
             return 1;
         }
 
-        if (0 === $wordCount % $this->wpm) {
+        if ($wordCount % $this->wpm === 0) {
             return $wordCount / $this->wpm;
         }
 
-        return round($wordCount / $this->wpm, 0, PHP_ROUND_HALF_UP);
+        return (int)round(num: $wordCount / $this->wpm);
     }
 
     public function minutesWithSuffix(string $string, string $suffix = null): string
     {
-        if (null === $suffix) {
+        if ($suffix === null) {
             $suffix = $this->suffix;
         }
 
-        return sprintf('%d %s', $this->minutes($string), $suffix);
+        return "{$this->minutes($string)} {$suffix}";
     }
 }
